@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.9)), url(./xps-bXfQLglc81U-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+m{
+    color: rgb(180, 180, 180);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+span{
+    color: rgb(220, 15, 0);
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+}
+nav ul li:hover{
+    color: rgb(0, 255, 251);
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #c4c4c4a3;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgba(221, 221, 221, 0.659);
+  outline: none;
+}
+
+hr {
+  /* border: 1px solid #f1f1f1; */
+  margin-bottom: 25px;
+  color: rgb(0, 255, 208);
+}
+
+
+button {
+  background-color: #00d30791;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #d0000085;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.roolll {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+h1{
+    color: #ddd;
+}
+p{
+    color: #ddd;
+}
+b{
+    color: #ddd;
+}
+label{
+    color: #ddd;
+}
+
+form{
+    margin-top: 50px;
+}
+.active{
+    color: rgb(206, 23, 23);
+}

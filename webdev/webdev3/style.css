@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.9)), url(./xps-bXfQLglc81U-unsplash.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    /* padding: 10px 25px; */
+    background-color: rgba#130f40b3;
+    width: 100%;
+    position: fixed;
+    height: 5%;
+}
+
+m{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+span{
+    color: rgb(220, 15, 0);
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 2cm;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+}
+nav ul li:hover{
+    color: rgb(0, 255, 251);
+}
+.active{
+    color: rgb(255, 98, 98);
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+}
+.col{
+    flex-basis: 50%;
+    font-weight: lighter;
+}
+h1{
+    color: rgb(221, 0, 0);
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 150px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 15px;
+    text-shadow: 3px 3px 3px black;
+    text-align: justify;
+    margin-right: 600px;
+    line-height: 21px;
+    line-height: 23px;
+    letter-spacing: normal;
+    color: rgb(243, 239, 239);
+    text-shadow: 1px 1px 1px black;
+    text-align: justify;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    border-color: cornsilk;
+    background: rgba(21, 21, 21, 0.46);
+    text-align: justify;
+    margin-left: 100px;
+    
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px 0;
+    background: rgb(0, 179, 110);
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+    transition: transform 0.5s;
+    margin-right: 30px;
+    
+}
+button:hover{
+    transform: translateY(-10px);
+    background: rgba(0, 0, 0, 0.501);
+    text-shadow: 1px 1px 1px white;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 20px; 
+    color: rgba(0, 255, 255, 0.426);
+}
+
+li a button{
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+li{
+    list-style: none;
+}
+
+form{
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+}
+
+search{
+    height: 30px;
+    width: 30px;
+}
+
+.active{
+    color: rgb(255, 98, 98);
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+hr{
+    margin-right: 820px;
+    margin-left: 150px;
+}
+input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 70%;
+    margin: 0;
+    padding: 14px;
+    border-radius: 20px;
+}
+k{
+    margin-left: 150px;
+}
+.container{
+    /* width: 100%;
+    height: 100vh; */
+    /* background-position: center; */
+    box-sizing: border-box;
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.9)), url(./xps-bXfQLglc81U-unsplash.jpg); 
+    background-position: center;
+    background-size: cover; */
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    /* padding: 10px 25px; */
+    background-color: #130f40;
+    width: 100%;
+    position: fixed;
+    height: 5%;
+}
+
+m{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+span{
+    color: rgb(220, 15, 0);
+}
+img{
+    margin-left: 20px;
+    margin-right: 50px;
+    width: 600px;
+    height: 400px;
+}
+f{
+    
+    display: inline-block;
+    padding: 15px 25px;
+    /* box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s; */ 
+    /* margin-right: 40%;
+    margin-bottom: 50px;
+    border-color: rgb(223, 223, 223);
+    background: rgb(220, 220, 220); */
+    text-align: justify;
+    color: rgb(16, 16, 16);
+    font-family: 'Commissioner', sans-serif;
+    
+}
+.yo{
+    color: rgba(54, 90, 230, 0.987);
+    padding: 15px 25px;
+    margin-left: 0;
+}
+
+.roller {
+    color: black;
+    font-weight: bolder;
+    display: inline-block;
+    
+    
+}
+h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(218, 0, 0);
+}
+.rem{
+    display: inline-flex;
+    font-family: 'Commissioner', sans-serif;
+}
+footer {
+    /* left: 0;
+    bottom: 0; */
+    /* width: 100%; */
+    background-color: #130f40db;
+    color: white;
+    height: 50%;
+}
+footer nav a{
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    height: 50%;
+}
+address{
+    display: grid;
+    color: #fff;
+}
+.hhh{
+    margin-right: 8cm;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+.gui{
+    width: 100%;
+    margin: 0;
+}
+.meta{
+    width: 100%;
+    margin: 0;
+}
+.op{
+    margin-left: 20px;
+    width: 22%;
+    color: #4b00c4c2;
+}
+.jojo{
+    margin-right: 20px;
+}
