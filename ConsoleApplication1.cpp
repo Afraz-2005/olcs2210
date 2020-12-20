@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+double celcius(double f)
+{
+    double celcius = (f - 32) / 1.8;
+    return celcius;
+}
+double fahrenheit(int c)
+{
+    double fahrenheit = (1.8 * c) + 32.0;
+    return fahrenheit;
+}
+
 int main()
 {
     cout << "\n\n\n\t\tTEMPERATURE CONVERTER";
@@ -10,7 +21,6 @@ int main()
 
     while(true)
     {
-        double fahrenheit, celcius;
         char option;
 
         cout << "\n\n\t\t\tYOUR CALCULTORS ARE:" << endl;
@@ -23,11 +33,10 @@ int main()
 
         if (option == '1')
         {
+            int cel;
             cout << "\n\n\t\t\tEnter temperature in degree Celsius: ";
-            cin >> celcius;
-
-            fahrenheit = (1.8 * celcius) + 32.0;
-            cout << "\n\t\t\tTemperature in degree Fahrenheit: " << fahrenheit << " F" << endl;
+            cin >> cel;
+            cout << "\n\t\t\tTemperature in degree Fahrenheit: " << fahrenheit(cel) << " F" << endl;
             char choice;
             cout << "\n\n\t\t\tDO YOU WANT TO CONTINUE? (y / n) ";
             cin >> choice;
@@ -53,11 +62,10 @@ int main()
 
         else if (option == '2')
         {
+            int fah;
             cout << "\n\n\t\t\tEnter temperature in degree Fahrenheit: ";
-            cin >> fahrenheit;
-
-            celcius = (fahrenheit - 32) / 1.8;
-            cout << "\n\t\t\tTemperature in degree Celsius: " << celcius << " C" << endl;
+            cin >> fah;
+            cout << "\n\t\t\tTemperature in degree Celsius: " << celcius(fah) << " C" << endl;
             char choice;
             cout << "\n\n\t\t\tDO YOU WANT TO CONTINUE? (y / n) ";
             cin >> choice;
