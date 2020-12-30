@@ -1,5 +1,4 @@
 #include <iostream>
-#include <unordered_set>
 using namespace std;
 
 string c1_name, c1_accNo, c1_nId, c1_phoneNo;
@@ -15,7 +14,7 @@ void customer_1() {
     cin >> c1_nId;
     cout << "\n\n\t\t\tEnter your phone number: ";
     cin >> c1_phoneNo;
-    cout << "\n\n\t\t\tEnter your current balance in your account: ";
+    cout << "\n\n\t\t\tEnter your current balance in your account: tk ";
     cin >> c1_balance;
     cout << "\n\n\t\t\t";
 }
@@ -26,7 +25,7 @@ void data_1() {
     cout << "\n\n\t\t\tAccount number:- " << c1_accNo << endl;
     cout << "\n\n\t\t\tNID:- " << c1_nId;
     cout << "\n\n\t\t\tPhone number:- " << c1_phoneNo << endl;
-    cout << "\n\n\t\t\tBalance:- " << c1_balance << endl << endl << endl;
+    cout << "\n\n\t\t\tBalance:- " << c1_balance << " tk" << endl << endl << endl;
 }
 
 void customer_2() {
@@ -38,7 +37,7 @@ void customer_2() {
     cin >> c2_nId;
     cout << "\n\n\t\t\tEnter your phone number: ";
     cin >> c2_phoneNo;
-    cout << "\n\n\t\t\tEnter your current balance in your account: ";
+    cout << "\n\n\t\t\tEnter your current balance in your account: tk ";
     cin >> c2_balance;
     cout << "\n\n\t\t\t";
 
@@ -50,7 +49,7 @@ void data_2() {
     cout << "\n\n\t\t\tAccount number:- " << c2_accNo << endl;
     cout << "\n\n\t\t\tNID:- " << c2_nId << endl;
     cout << "\n\n\t\t\tPhone number:- " << c2_phoneNo << endl;
-    cout << "\n\n\t\t\tBalance:- " << c2_balance << endl << endl << endl;
+    cout << "\n\n\t\t\tBalance:- " << c2_balance << " tk" << endl << endl << endl;
 }
 
 void deposit_1() {
@@ -76,16 +75,16 @@ void withdraw_1()
     cout << "\n\n\t\t\tEnter the ammount that you want to withdraw : ";
     cin >> withdraw1;
     c1_balance = c1_balance - withdraw1;
-    cout << "\n\n\t\t\Your value now is : " << c1_balance << endl;
+    cout << "\n\n\t\t\tYour value now is : " << c1_balance << endl;
 }
 
 void withdraw_2()
 {
-    cout << "\n\n\t\t\tPrevious Ammount : " << c2_balance << endl;
-    cout << "\n\n\t\t\tEnter the ammount that you want to withdraw : ";
+    cout << "\n\n\t\tPrevious Ammount : " << c2_balance << endl;
+    cout << "\n\n\t\tEnter the ammount that you want to withdraw : ";
     cin >> deposit1;
     c2_balance = c2_balance - withdraw1;
-    cout << "\n\n\t\t\tYour value now is : " << c2_balance << endl;
+    cout << "\n\n\t\t\Your value now is : " << c2_balance << endl;
 }
 void delete_1()
 {
