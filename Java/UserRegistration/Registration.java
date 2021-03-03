@@ -33,7 +33,7 @@ public class Registration {
     }
     public void passwordLengthChecker(String password){
 
-        if (password.length() > 8 && this.password.length() > 8) {
+        if (password.length() > 8) {
             this.password = password;
             System.out.println("Account Successfully created!");
             showInfo();
