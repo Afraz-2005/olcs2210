@@ -11,7 +11,7 @@ public class Student {
             this.id += 1;
             this.name = name;
             this.gpa = gpa;
-            System.out.println("\nThe student is promoted to the next session!");
+            System.out.println("\nThe student is promoted to the next session!\n");
         }
         else {
             System.out.println("\nThe student is demoted as he failed.\n");
