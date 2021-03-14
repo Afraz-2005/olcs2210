@@ -34,6 +34,10 @@ public class ReadyPlayer {
 
     public void setEliteCoins(int eliteCoins) { this.eliteCoins = eliteCoins; }
 
+    public String getSubscriptionType() { return subscriptionType; }
+
+    public void setSubscriptionType(String subscriptionType) { this.subscriptionType = subscriptionType; }
+
     public void showInfo() {
 
         System.out.println("\n=======PLAYER=INFO========");
@@ -52,7 +56,6 @@ public class ReadyPlayer {
     public int getGamePoints() {
         return gamePoints;
     }
-
     public void setGamePoints(int gamePoints) {
         this.gamePoints = gamePoints;
     }
