@@ -59,7 +59,7 @@ public class ReadyPlayer {
 
     public int playerTierTracker(int GamePoints) {
         this.gamePoints =+ GamePoints;
-        if (this.gamePoints < 1000 && this.gamePoints > 0) {setPlayerTier("Bronze");}
+        if (this.gamePoints > 1000 && this.gamePoints < 0) {setPlayerTier("Bronze");}
         else if (this.gamePoints >= 1000 && this.gamePoints <= 1999) {setPlayerTier("Silver");}
         else if (this.gamePoints >= 2000 && this.gamePoints <= 2999) {setPlayerTier("Gold");}
         else if (this.gamePoints >= 3000 && this.gamePoints <= 3999) {setPlayerTier("Diamond");}
