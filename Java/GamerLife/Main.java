@@ -11,13 +11,9 @@ public class Main {
         System.out.print("Username: ");
         String username = s1.nextLine();
 
-        System.out.print("Subscription type: ");
-        String subscriptionType = s1.nextLine();
-
         ReadyPlayer game = new ReadyPlayer(fullname, username);
 
-        game.showInfo();
-        game.setSubscriptionType(subscriptionType);
+        game.setSubscriptionType("Elite Subscription");
         game.buyEliteCoins(20);
         game.playerTierTracker(2222);
         game.showInfo();
