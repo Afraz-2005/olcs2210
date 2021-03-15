@@ -4,7 +4,7 @@ public class ReadyPlayer {
 
     private static int id;
     private String fullName, username;
-    private String subscriptionType = "Ready Subscription";
+    private String subscriptionType = "Elite Subscription";
     private int gamePoints = 0;
     private String playerTier = "Bronze";
     private int readyCoins = 0;
@@ -41,13 +41,13 @@ public class ReadyPlayer {
     public void showInfo() {
 
         System.out.println("\n=======PLAYER=INFO========");
-        System.out.println("Full Name: " + fullName);
+        System.out.println("Full Name: " + getFullName());
         System.out.println("Username: " + usernameCreator());
-        System.out.println("Subscription Type: " + subscriptionType);
-        System.out.println("Game Points: " + gamePoints);
-        System.out.println("Player Tier: " + playerTier);
-        System.out.println("Ready Coins: " + readyCoins);
-        System.out.println("Elite Coins: " + eliteCoins);
+        System.out.println("Subscription Type: " + getSubscriptionType());
+        System.out.println("Game Points: " + getGamePoints());
+        System.out.println("Player Tier: " + getPlayerTier());
+        System.out.println("Ready Coins: " + getReadyCoins());
+        System.out.println("Elite Coins: " + getEliteCoins());
         System.out.println("==========================");
     }
 
@@ -71,8 +71,8 @@ public class ReadyPlayer {
         return 0;
     }
 
-    public int buyEliteCoins(int EliteCoins) {
-        if (this.subscriptionType == "Elite Subscription") { setEliteCoins(this.eliteCoins + eliteCoins); }
+    public int buyEliteCoins(int eliteCoins) {
+        if (this.subscriptionType == "Elite Subscription") { setEliteCoins(this.eliteCoins += eliteCoins); }
         else { System.out.println("Please set Subscription type to elite subscription in order to buy Elite coins"); }
         return 0;
     }
