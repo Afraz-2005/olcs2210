@@ -1,47 +1,54 @@
-package com.company;
+package Test.test;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class FileUploader {
     private static int fileId;
     private String filename, filetype;
-    private int fileSize;
+    private float fileSize;
     private static String fileCreated;
-    public int idset = fileId;
+    private int idset = fileId;
 
-    public FileUploader(String filename, String filetype, int fileSize) {
-        this.filename = filename;
-        this.filetype = filetype;
-        this.fileSize = fileSize;
+    public FileUploader(String filename, String filetype, float fileSize) {
+        if(FileTypeChecher() && FileSizeChecker()) {
+            this.filename = filename;
+            this.fileSize = fileSize;
+            this.filetype = filetype;
+        }
+        else {
+            System.out.println("Input Error!");
+            System.out.println(" please check your file type and size");
+        }
     }
     public String FileIdCreator(){
-        return this.filename += "." + "_" + this.filetype + this.idset;
+        this.idset++;
+        return this.filename + "." + this.filetype + "_" + this.idset;
     }
-    public String FileTypeChecher () {
+    public boolean FileTypeChecher() {
         try{
-           if(this.filetype == "txt" || this.filetype == "jpg" || this.filetype == "png"|| this.filetype == "doc"){
-               return this.filetype;
-           }
-           else{
-               throw new Exception();
-           }
+            if(this.filetype == "txt" || this.filetype == "jpg" || this.filetype == "png"|| this.filetype == "doc"){
+                return true;
+            }
+            else{
+                throw new Exception();
+            }
         }catch (Exception err){
             System.out.println("File type not specified");
+            return false;
         }
-        return "";
     }
-    public int FileSizeChecker () {
+    public boolean FileSizeChecker() {
         try{
             if (this.fileSize <= 5 && fileSize >= 0) {
-                return this.fileSize;
+                return true;
             }
             else {
                 throw new Exception();
             }
         }catch (Exception err){
             System.out.println("File size does not match the required limit!");
+            return false;
         }
-        return 0;
     }
     public void ShowInfo(){
         LocalDateTime time = LocalDateTime.now();
@@ -77,11 +84,11 @@ public class FileUploader {
         this.filetype = filetype;
     }
 
-    public int getFileSize() {
+    public float getFileSize() {
         return fileSize;
     }
 
-    public void setFileSize(int fileSize) {
+    public void setFileSize(float fileSize) {
         this.fileSize = fileSize;
     }
 
