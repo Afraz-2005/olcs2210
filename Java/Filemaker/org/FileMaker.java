@@ -20,7 +20,7 @@ public class FileMaker {
         System.out.println(this.getFileName() + this.getFileId() + "\t" + this.fileCreated);
     }
     private static String idCreator(String fileType) {
-        return "." + fileType + "_" + ++fileCounter;
+        return fileType + "_" + ++fileCounter;
     }
 
     public String getFileId() {

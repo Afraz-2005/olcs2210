@@ -14,12 +14,20 @@ public class Main {
 
         FileMaker[] file = new FileMaker[numOfFiles];
 
-        for (int i = 1; i < file.length; i++) {
+        for (int i = 0; i < file.length; i++) {
             System.out.println("Enter the path to create a directory: ");
             Scanner sc = new Scanner(System.in);
             String path = sc.next();
             System.out.println("Enter the name of the desired a directory: ");
             path = path+sc.next();
+            File dir = new File(path);
+            boolean bool = dir.mkdir();
+            if(bool){
+                System.out.println("Directory created successfully");
+            }else{
+                System.out.println("Sorry couldn’t create specified directory");
+            }
+
             Scanner s2 = new Scanner(System.in);
             System.out.println("Enter the path name where you want to save the file: ");
             String pathName = s2.nextLine();
@@ -30,13 +38,11 @@ public class Main {
 
             file[i] = new FileMaker(fileName, filetype);
 
-            String pathname = pathName + fileName + "." + filetype;
+            String pathname = pathName + fileName + filetype;
 
             try {
                 File files = new File(pathname);
                 if (files.createNewFile()) {
-                    File dirc = new File(path);
-                    boolean dir = files.mkdir();
                     System.out.println("file Created");
                 } else {
                     System.out.println("File already exists.");
@@ -46,8 +52,7 @@ public class Main {
             }
 
         }
-        for(int i = 1; i < file.length; i++) {
-            System.out.println("\nfile " + i);
+        for(int i = 0; i < file.length; i++) {
             file[i].ShowInfo();
         }
     }
