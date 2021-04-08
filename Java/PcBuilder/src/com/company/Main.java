@@ -10,12 +10,12 @@ public class Main {
         while (true){
 
             System.out.print("CPU: "); String cpuName = sc.nextLine();
-            System.out.print("CPU generation (th gen): "); int cpuGen = s1.nextInt();
+            System.out.print("CPU generation (th gen) [int]: "); int cpuGen = s1.nextInt();
             System.out.print("Motherboard: "); String motherboard = sc.nextLine();
-            System.out.print("Motherboard generation (ready for (th gen)): "); int motherboardGen = s1.nextInt();
+            System.out.print("Motherboard generation (ready for (th gen)) [int]: "); int motherboardGen = s1.nextInt();
             System.out.print("Graphics Card: "); String gpuName = sc.nextLine();
             System.out.print("RAM: " ); String ramName = sc.nextLine();
-            System.out.print("Ram quantity (GB): "); int ramQ = s1.nextInt();
+            System.out.print("Ram quantity (GB) [int]: "); int ramQ = s1.nextInt();
             System.out.print("Cooler: "); String cooler = sc.nextLine();
             System.out.print("Monitor: "); String monitor = sc.nextLine();
             System.out.print("Storage: "); String storage = sc.nextLine();
